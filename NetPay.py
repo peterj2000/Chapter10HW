@@ -1,4 +1,7 @@
+
+
 from EmployeeClass import Employee
+
 from PayrollDeductionClass import PD
 
 person= Employee('Jimmy Smith', 58475, 'Information Systems', 'Developer', 6800)
@@ -17,5 +20,5 @@ print("*** Employee Pay ***")
 print("Name:", person.getName())
 print("ID Number:", person.getID())
 print("Department:", person.getDepartment())
-print("Gross Pay: $", float(person.getSalary()), sep='')
-print("Net Pay: $", person.getSalary()-d2.getAmount()-d4.getAmount()-d5.getAmount(), sep='')
+print("Gross Pay: $", float(person.getSalary()))
+print("Net Pay: $", person.getSalary()+ d2.getAmount()+ d4.getAmount()+ d5.getAmount())

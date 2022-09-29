@@ -1,15 +1,18 @@
+
+
 class PD:
     
-    def __init__(self, description, date, amnt, empID):
-        self.__description= description
+    def __init__(self, descrip, date, amount, eID):
+
+        self.__descrip= descrip
         self.__date= date
-        self.__amnt= amnt
-        self.__empID= empID
+        self.__amount= amount
+        self.__eID= eID
 
 
 
     def getDescription(self):
-        return self.__description
+        return self.__descrip
     
 
     def getDate(self):
@@ -17,8 +20,8 @@ class PD:
     
     
     def getAmount(self):
-        return self.__amnt
+        return self.__amount
     
 
     def getEmployeeID(self):
-        return self.__empID
+        return self.__eID
