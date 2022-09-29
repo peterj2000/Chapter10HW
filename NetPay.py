@@ -1,21 +1,21 @@
-# creating an object for an employee
 from EmployeeClass import Employee
-from PayrollDeductionClass import PayrollDeduction
+from PayrollDeductionClass import PD
+
+person= Employee('Jimmy Smith', 58475, 'Information Systems', 'Developer', 6800)
 
 
-employee= Employee('Jimmy Smith', 58475, 'Information Systems', 'Developer', 6800)
+d1= PD('food court', '8/14/2022', 22.50, 39119)
+d2= PD('gift contribution', '8/12/2022', 25.00, 58475)
+d3= PD('food court', '8/17/2022', 15.25, 21547)
+d4= PD('vending machine', '8/22/2022', 3.00, 58475)
+d5= PD('vending machine', '8/5/2022', 2.75, 58475)
 
-# creating five objects for five payroll deductions
-deduction1= PayrollDeduction('food court', '8/14/2022', 22.50, 39119)
-deduction2= PayrollDeduction('gift contribution', '8/12/2022', 25.00, 58475)
-deduction3= PayrollDeduction('food court', '8/17/2022', 15.25, 21547)
-deduction4= PayrollDeduction('vending machine', '8/22/2022', 3.00, 58475)
-deduction5= PayrollDeduction('vending machine', '8/5/2022', 2.75, 58475)
 
-# printing the report of an employee
+
+
 print("*** Employee Pay ***")
-print("Name:", employee.getName())
-print("ID Number:", employee.getID())
-print("Department:", employee.getDepartment())
-print("Gross Pay: $", float(employee.getSalary()), sep='')
-print("Net Pay: $", employee.getSalary()-deduction2.getAmount()-deduction4.getAmount()-deduction5.getAmount(), sep='')
+print("Name:", person.getName())
+print("ID Number:", person.getID())
+print("Department:", person.getDepartment())
+print("Gross Pay: $", float(person.getSalary()), sep='')
+print("Net Pay: $", person.getSalary()-d2.getAmount()-d4.getAmount()-d5.getAmount(), sep='')

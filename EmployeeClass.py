@@ -8,17 +8,23 @@ class Employee:
         self.__job_title= job_title
         self.__salary= salary
     
+
+
     def getName(self):
         return self.__name
     
+
     def getID(self):
         return self.__ID
     
+
     def getDepartment(self):
         return self.__department
     
     def getJobTitle(self):
         return self.__job_title
+    
+
     
     def getSalary(self):
         return self.__salary
